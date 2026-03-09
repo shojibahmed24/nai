@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white antialiased;
+  }
+}
+
+@layer utilities {
+  .islamic-pattern-bg {
+    background-color: #082b1a;
+    background-image: radial-gradient(#0F5132 1px, transparent 1px);
+    background-size: 20px 20px;
+    position: relative;
+  }
+  
+  .islamic-pattern-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(8,43,26,0.4) 0%, rgba(8,43,26,0.9) 100%);
+    pointer-events: none;
+  }
+
+  .glass-card {
+    @apply bg-noor-green/40 backdrop-blur-md border border-noor-green-light/30 shadow-lg;
+  }
+
+  .gold-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-noor-gold-light via-noor-gold to-noor-gold-dark;
+  }
+}
