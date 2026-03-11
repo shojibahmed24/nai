@@ -18,9 +18,9 @@ jobs:
     name: Build Android Binary
     runs-on: ubuntu-latest
     env:
-      SIGNING_STORE_PASSWORD: "studio_qefdgr0p"
-      SIGNING_KEY_ALIAS: "myapp_key"
-      SIGNING_KEY_PASSWORD: "studio_qefdgr0p"
+      SIGNING_STORE_PASSWORD: ""
+      SIGNING_KEY_ALIAS: ""
+      SIGNING_KEY_PASSWORD: ""
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
     steps:
